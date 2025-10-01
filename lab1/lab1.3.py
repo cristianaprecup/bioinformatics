@@ -1,11 +1,13 @@
 import tkinter as tk
 from tkinter import filedialog, messagebox
 
+
 def read_fasta(file_path):
     with open(file_path, 'r') as file:
         lines = file.readlines()
         sequence = ''.join(line.strip() for line in lines if not line.startswith('>'))
     return sequence
+
 
 def calculate_percentage(sequence):
     total_length = len(sequence)
@@ -23,6 +25,7 @@ def calculate_percentage(sequence):
     }
 
     return letter_percentage
+
 
 def open_fasta_file():
     file_path = filedialog.askopenfilename(
@@ -43,6 +46,7 @@ def open_fasta_file():
     except Exception as e:
         messagebox.showerror("Error", f"An error occurred: {e}")
 
+
 def main():
     global result_text
     root = tk.Tk()
@@ -55,6 +59,7 @@ def main():
     result_text.pack(pady=10)
 
     root.mainloop()
+
 
 if __name__ == "__main__":
     main()

@@ -1,9 +1,0 @@
->seq1_DNA_simple
-ACGTACGTACGT
-ACGTACGT
->seq2_DNA_with_ambiguous
-NNNNRRYYMMKKSWWBDHVACGT
->seq3_Protein_like
-MSTNPKPQRKTKRNTNRRPGGQX
->seq4_Lowercase
-acgtnacgtn
